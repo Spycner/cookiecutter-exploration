@@ -19,5 +19,5 @@ clean-targets:
 models:
   +schema: "{{ cookiecutter.domain }}_workbench"
   +post-hook:
-    - "{{ some_package.some_posthook(model) }}"
-    - "{{ some_package.some_other_posthook(model) }}"
+    - "{% raw %}{{ some_package.some_posthook(model) }}{% endraw %}"
+    - "{% raw %}{{ some_package.some_other_posthook(model) }}{% endraw %}"
